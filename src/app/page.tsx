@@ -1,9 +1,5 @@
-import Image from 'next/image';
+import LandingPage from '@/components/website/home-layout';
 
 export default function Home() {
-  return (
-    <div className=''>
-      <p>Fiiwe Barry</p>
-    </div>
-  );
+  return <LandingPage />;
 }
