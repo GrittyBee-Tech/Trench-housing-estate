@@ -6,7 +6,7 @@ import News from './News';
 import Testimonial from './Testimonial';
 import Faq from './Faq';
 import Subscribe from './Subscribe';
-import Footer from '../generic-layout/Footer';
+import Footer from '@/components/generic-layout/Footer';
 
 const LandingPage = () => {
   return (

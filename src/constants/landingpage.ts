@@ -1,14 +1,4 @@
-import icon from '/src/assets/images/Home.png';
-import icon2 from '/src/assets/images/space.png';
-import icon3 from '/src/assets/images/hotel.png';
-import icon4 from '/src/assets/images/land.png';
-// import icon5 from '/src/assets/images/recreational.png';
-import icon6 from '/src/assets/images/prop.png';
-import icon7 from '/src/assets/images/prop2.png';
-import icon8 from '/src/assets/images/prop3.png';
-import review1 from '../assets/images/review1.png';
-import review2 from '../assets/images/review2.png';
-import review3 from '../assets/images/review3.png';
+import Image from 'next/image';
 
 export const categories = [
   {
@@ -40,17 +30,17 @@ export const categories = [
 export const properties = [
   {
     id: 1,
-    image: icon,
+    Image: '/assets/Home.png',
     content: 'Home',
   },
   {
     id: 2,
-    image: icon2,
+    image: 'assets/space.png',
     content: 'Office Spaces',
   },
   {
     id: 3,
-    image: icon3,
+    image: '/assets/hotel.png',
     content: 'Hotels',
   },
 ];
@@ -58,12 +48,12 @@ export const properties = [
 export const properties2 = [
   {
     id: 1,
-    image: icon3,
+    image: '/assets/hotel.png',
     content: 'Home',
   },
   {
     id: 2,
-    image: icon4,
+    image: '/assets/land.png',
     content: 'Lands',
   },
 ];
@@ -71,7 +61,7 @@ export const properties2 = [
 export const assets = [
   {
     id: 1,
-    image: icon6,
+    image: '/assets/prop.png',
     content: 'Lands',
   },
   {
@@ -89,17 +79,17 @@ export const assets = [
 export const assets2 = [
   {
     id: 1,
-    image: icon6,
+    image: '/assets/prop.png',
     content: 'Lands',
   },
   {
     id: 2,
-    image: icon7,
+    image: '/assets/prop2.png',
     content: 'Recreational centers',
   },
   {
     id: 3,
-    image: icon8,
+    image: '/assets/prop3.png',
     content: 'Home',
   },
 ];
@@ -113,7 +103,7 @@ export const FAQ_SCHEMA = [
 
 export const reviewArray = [
   {
-    image: review1,
+    image: '/assets/review1.png',
     name: 'Guy Hawkins',
     role: 'Accounting Officer',
     stars: 4,
@@ -121,7 +111,7 @@ export const reviewArray = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolores reprehenderit ducimus magni odit perspiciatis? Dolorem dicta sequi maxime optio.',
   },
   {
-    image: review2,
+    image: '/assets/review2.png',
     name: 'Guy Hawkins',
     role: 'Accounting Officer',
     stars: 4,
@@ -129,7 +119,7 @@ export const reviewArray = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolores reprehenderit ducimus magni odit perspiciatis? Dolorem dicta sequi maxime optio.',
   },
   {
-    image: review3,
+    image: '/assets/review3.png',
     name: 'Guy Hawkins',
     role: 'Accounting Officer',
     stars: 4,
@@ -137,7 +127,7 @@ export const reviewArray = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolores reprehenderit ducimus magni odit perspiciatis? Dolorem dicta sequi maxime optio.',
   },
   {
-    image: review1,
+    image: '/assets/review1.png',
     name: 'Guy Hawkins',
     role: 'Accounting Officer',
     stars: 4,
@@ -145,7 +135,7 @@ export const reviewArray = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolores reprehenderit ducimus magni odit perspiciatis? Dolorem dicta sequi maxime optio.',
   },
   {
-    image: review2,
+    image: '/assets/review2.png',
     name: 'Guy Hawkins',
     role: 'Accounting Officer',
     stars: 4,
@@ -153,7 +143,7 @@ export const reviewArray = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolores reprehenderit ducimus magni odit perspiciatis? Dolorem dicta sequi maxime optio.',
   },
   {
-    image: review3,
+    image: '/assets/review3.png',
     name: 'Guy Hawkins',
     role: 'Accounting Officer',
     stars: 4,

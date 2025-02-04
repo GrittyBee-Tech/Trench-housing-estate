@@ -1,3 +1,5 @@
+'use client';
+
 // import Button from '../ui/Button';
 import { useSelector, useDispatch } from 'react-redux';
 import { navActions } from '../../store/nav-slice';
@@ -21,20 +23,20 @@ const MobileNavbar = () => {
   };
 
   return (
-    <section className="  z-50 flex fixed top-0  bg-white w-full h-full  ">
-      <nav className="w-full ">
-        <div className="shadow-2xl p-2 ">
-          <div className="px-6 grid grid-flow-col justify-between">
+    <section className='  z-50 flex fixed top-0  bg-white w-full h-full  '>
+      <nav className='w-full '>
+        <div className='shadow-2xl p-2 '>
+          <div className='px-6 grid grid-flow-col justify-between'>
             <span>
-              <img src={logo} alt="" />
+              <img src={logo} alt='' />
             </span>
             <span>
-              <Icon type={ICONS.mail_icon} size={24} color="#090909" />
+              <Icon type={ICONS.mail_icon} size={24} color='#090909' />
             </span>
           </div>
         </div>
-        <div className="py-2 grid grid-flow-row gap-5">
-          <div className="grid grid-flow-row justify-items-center   ">
+        <div className='py-2 grid grid-flow-row gap-5'>
+          <div className='grid grid-flow-row justify-items-center   '>
             <div
               onClick={() => isActive('home')}
               className={`${
@@ -94,16 +96,16 @@ const MobileNavbar = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-flow-row px-8 py-3 gap-4">
+        <div className='grid grid-flow-row px-8 py-3 gap-4'>
           <button
             onClick={() => navigate('/login')}
-            className=" border py-3 border-blue-light-900 bg-white rounded-md hover:bg-[purple] hover:text-white shadow-md font-bold  font-Montserrat"
+            className=' border py-3 border-blue-light-900 bg-white rounded-md hover:bg-[purple] hover:text-white shadow-md font-bold  font-Montserrat'
           >
             Sign in
           </button>
           <button
             onClick={() => navigate('/register')}
-            className=" rounded-md hover:bg-[purple] py-3 hover:text-white bg-[#001F3F] text-[#FFFFFF] font-bold lg:text-[1rem] font-Montserrat"
+            className=' rounded-md hover:bg-[purple] py-3 hover:text-white bg-[#001F3F] text-[#FFFFFF] font-bold lg:text-[1rem] font-Montserrat'
           >
             Get started
           </button>
