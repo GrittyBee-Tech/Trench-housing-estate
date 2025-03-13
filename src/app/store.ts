@@ -1,3 +1,5 @@
+'use client';
+
 import { configureStore } from '@reduxjs/toolkit';
 import navSlice from './features/nav-slice';
 import featuredSlice from './features/featured-slice';

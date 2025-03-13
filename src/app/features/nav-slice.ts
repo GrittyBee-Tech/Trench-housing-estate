@@ -1,3 +1,4 @@
+'use client';
 import { createSlice } from '@reduxjs/toolkit';
 
 interface NavState {
@@ -24,7 +25,7 @@ const navSlice = createSlice({
     },
     toggleMobile(state) {
       state.mobileOpen = !state.mobileOpen;
-    }
+    },
   },
 });
 export const navActions = navSlice.actions;

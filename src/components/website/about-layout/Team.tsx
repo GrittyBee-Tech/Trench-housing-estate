@@ -1,29 +1,30 @@
+import Image from "next/image";
 import team1 from "../../assets/images/about/team1.png";
 import team2 from "../../assets/images/about/team2.png";
 import team3 from "../../assets/images/about/team3.png";
 import team4 from "../../assets/images/about/team4.png";
 
 const teamMembers = [
-    {
-        image: team1,
-        name: "Flores Williams",
-        title: "Agent Coordinator"
-    },
-    {
-        image: team2,
-        name: "Flores Williams",
-        title: "Agent Coordinator"
-    },
-    {
-        image: team3,
-        name: "Flores Williams",
-        title: "Agent Coordinator"
-    },
-    {
-        image: team4,
-        name: "Flores Williams",
-        title: "Agent Coordinator"
-    }
+  {
+    image: '/assets/about/team1.png',
+    name: 'Flores Williams',
+    title: 'Agent Coordinator',
+  },
+  {
+    image: '/assets/about/team2.png',
+    name: 'Flores Williams',
+    title: 'Agent Coordinator',
+  },
+  {
+    image: '/assets/about/team3.png',
+    name: 'Flores Williams',
+    title: 'Agent Coordinator',
+  },
+  {
+    image: '/assets/about/team4.png',
+    name: 'Flores Williams',
+    title: 'Agent Coordinator',
+  },
 ];
 
 const Team = () => {

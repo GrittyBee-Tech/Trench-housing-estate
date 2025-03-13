@@ -64,16 +64,16 @@ export const assets = [
     image: '/assets/prop.png',
     content: 'Lands',
   },
-  {
-    id: 2,
-    image: icon7,
-    content: 'Recreational centers',
-  },
-  {
-    id: 3,
-    image: icon8,
-    content: 'Home',
-  },
+  // {
+  //   id: 2,
+  //   image: icon7,
+  //   content: 'Recreational centers',
+  // },
+  // {
+  //   id: 3,
+  //   image: icon8,
+  //   content: 'Home',
+  // },
 ];
 
 export const assets2 = [

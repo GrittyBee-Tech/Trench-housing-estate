@@ -1,8 +1,8 @@
+'use client';
+
 import Button from '@/components/ui/Button';
-import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
-  const navigate = useNavigate();
   return (
     <section className='w-full'>
       <div className='bg-hero-pattern bg-no-repeat lg:bg-cover md:bg-cover xl:bg-cover bg-cover w-full lg:pb-48 pb-5 '>
@@ -23,7 +23,7 @@ const Hero = () => {
               type='button'
               size='sm'
               variant='secondary'
-              onClick={() => navigate('/about')}
+              onClick={''}
               className='  lg:px-11 px-4 rounded-lg hover:bg-[purple] hover:text-white bg-[#001F3F] text-[#FFFFFF] font-bold lg:text-base font-Montserrat'
             >
               Learn More
@@ -32,7 +32,7 @@ const Hero = () => {
               type='button'
               size='sm'
               variant='secondary'
-              onClick={() => navigate('/contact')}
+              onClick={''}
               className=' border border-white px-8 py-3 lg:px-8 lg:py-3 rounded-lg hover:border-[purple] hover:bg-[purple] hover:text-white  text-white shadow-md  font-bold lg:text-base font-Montserrat'
             >
               Get in touch
