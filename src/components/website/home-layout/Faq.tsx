@@ -1,9 +1,9 @@
 import 'use client';
 
-import { useState } from 'react';
 import { FAQ_SCHEMA } from '@/constants/landingpage';
 import Icon from '@/components/ui/icons';
 import { ICONS } from '@/constants/icons';
+import { useState } from 'react';
 
 const Faq = () => {
   const [showFaq, setShowFaq] = useState<number | null>(null);

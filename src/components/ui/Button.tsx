@@ -22,7 +22,13 @@ interface ButtonProps {
     | 'tertiary-destructive';
 }
 
-const Button = ({ children, type, onClick, className = '', onBlur }: ButtonProps) => {
+const Button = ({
+  children,
+  type,
+  onClick,
+  className = '',
+  onBlur,
+}: ButtonProps) => {
   //Default style
 
   //Conditionally apply default styling if className is not provided
@@ -31,7 +37,12 @@ const Button = ({ children, type, onClick, className = '', onBlur }: ButtonProps
     : 'defaultStyle';
 
   return (
-    <button type={type} onClick={onClick} className={buttonClassName} onBlur={onBlur}>
+    <button
+      type={type}
+      onClick={onClick}
+      className={buttonClassName}
+      onBlur={onBlur}
+    >
       {children}
     </button>
   );

@@ -1,4 +1,5 @@
 import Button from '@/components/ui/Button';
+import React from 'react';
 
 const Subscribe = () => {
   return (

@@ -1,11 +1,14 @@
 'use client';
 
+import Footer from '@/components/generic-layout/Footer';
+import Navbar from '@/components/generic-layout/Navbar';
 import Button from '@/components/ui/Button';
 
 const Hero = () => {
   return (
     <section className='w-full'>
-      <div className='bg-hero-pattern bg-no-repeat lg:bg-cover md:bg-cover xl:bg-cover bg-cover w-full lg:pb-48 pb-5 '>
+      <Navbar />
+      <div className=' bg-heroBg  bg-no-repeat lg:bg-cover md:bg-cover xl:bg-cover bg-cover w-full lg:pb-48 pb-5 '>
         <div className=' grid gap-11 px-7 xl:px-28'>
           <div className='grid gap-3'>
             <h1 className=' md:pt-60 pt-20 text-[#FFFFFF] font-bold text-2xl font-Montserrat md:text-8xl'>
@@ -23,7 +26,7 @@ const Hero = () => {
               type='button'
               size='sm'
               variant='secondary'
-              onClick={''}
+              // onClick={''}
               className='  lg:px-11 px-4 rounded-lg hover:bg-[purple] hover:text-white bg-[#001F3F] text-[#FFFFFF] font-bold lg:text-base font-Montserrat'
             >
               Learn More
@@ -32,7 +35,7 @@ const Hero = () => {
               type='button'
               size='sm'
               variant='secondary'
-              onClick={''}
+              // onClick=''
               className=' border border-white px-8 py-3 lg:px-8 lg:py-3 rounded-lg hover:border-[purple] hover:bg-[purple] hover:text-white  text-white shadow-md  font-bold lg:text-base font-Montserrat'
             >
               Get in touch
@@ -40,6 +43,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 };

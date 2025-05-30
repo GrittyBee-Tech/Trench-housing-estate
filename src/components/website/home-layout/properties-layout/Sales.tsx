@@ -1,4 +1,5 @@
 import Button from '@/components/ui/Button';
+import Image from 'next/image';
 
 import Icon from '@/components/ui/icons';
 import { ICONS } from '@/constants/icons';
@@ -13,7 +14,11 @@ const Sales = () => {
           return (
             <div key={id} className=' rounded-lg shadow-md'>
               <div className='p-2'>
-                <img className='w-full h-52' src={image} alt='' />
+                <Image
+                  className='w-full h-52'
+                  src={'/assets/house.png'}
+                  alt=''
+                />
               </div>
               <div>
                 <p className='p-2 font-semibold text-[#262626] lg:text-base text-sm font-Montserrat'>

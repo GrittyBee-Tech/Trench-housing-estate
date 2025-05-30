@@ -4,22 +4,20 @@ import Button from '../ui/Button';
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { navActions } from '@/app/features/nav-slice';
-import { RootState } from '../../store/store';
+// import { RootState } from '../../store/store';
 import Link from 'next/link';
-import logo from '../../assets/brands/logo.svg';
-
-import { useNavigate, NavLink } from 'react-router-dom';
-import MobileNavbar from './MobileNavbar';
+import Image from 'next/image';
+// import MobileNavbar from './MobileNavbar';
 import { ICONS } from '@/constants/icons';
 import Icon from '../ui/icons';
 
 const Navbar = () => {
   const [dropDown, setDropDown] = useState(false);
-  const isOpen = useSelector((state: RootState) => state.nav.isOpen);
-  const activeTab = useSelector((state: RootState) => state.nav.activeTab);
+  // const isOpen = useSelector((state: RootState) => state.nav.isOpen);
+  // const activeTab = useSelector((state: RootState) => state.nav.activeTab);
   // const mobileOpen = useSelector((state: RootState) => state.nav.mobileOpen);
   const dispatch = useDispatch();
-  const navigate = useNavigate();
+
   const toggleContent = () => {
     dispatch(navActions.toggle());
   };
@@ -31,30 +29,30 @@ const Navbar = () => {
     <section className='relative shadow-lg'>
       <nav className=' px-4 xl:px-24 lg:p-4'>
         <div className='xl:py-4 md:py-5 py-2 grid grid-flow-col mx-auto justify-between items-center'>
-          <NavLink to={'/'}>
-            <img src={logo} className='lg:w-52' alt='' />
-          </NavLink>
+          <Link href={'/'}>
+            <Image src='/logo.svg' className='lg:w-52' alt='' />
+          </Link>
           <div className='lg:block hidden xl:gap-6 lg:gap-6  pt-2 md:gap-4'>
             <div className='grid grid-flow-col lg:gap-7 p-1   '>
-              <NavLink to={'/'}>
+              <Link href={'/'}>
                 <div
                   onClick={() => isActive('home')}
-                  className={`${
-                    activeTab === 'home'
-                      ? 'font-bold text-primary  xl:text-lg lg:text-base  font-Montserrat cursor-pointer border-b-4 border-blue-light-600'
-                      : 'font-normal text-secondary   text-lg xl:text-lg lg:text-base font-Montserrat cursor-pointer'
-                  }`}
+                  //   className={`${
+                  //     activeTab === 'home'
+                  //       ? 'font-bold text-primary  xl:text-lg lg:text-base  font-Montserrat cursor-pointer border-b-4 border-blue-light-600'
+                  //       : 'font-normal text-secondary   text-lg xl:text-lg lg:text-base font-Montserrat cursor-pointer'
+                  //   }`}
                 >
                   Home
                 </div>
-              </NavLink>
+              </Link>
               <div
                 onClick={() => isActive('properties')}
-                className={`${
-                  activeTab === 'properties'
-                    ? 'font-bold text-primary z-40 xl:text-lg lg:text-base font-Montserrat '
-                    : 'font-normal text-secondary xl:text-lg lg:text-base font-Montserrat'
-                }`}
+                // className={`${
+                //   activeTab === 'properties'
+                //     ? 'font-bold text-primary z-40 xl:text-lg lg:text-base font-Montserrat '
+                //     : 'font-normal text-secondary xl:text-lg lg:text-base font-Montserrat'
+                // }`}
               >
                 <div
                   onClick={() => setDropDown(!dropDown)}
@@ -80,42 +78,41 @@ const Navbar = () => {
                   )}
                 </div>
               </div>
-              <NavLink to={'/about'}>
+              <Link href={'/about'}>
                 <div
                   onClick={() => isActive('/about')}
-                  className={`${
-                    activeTab === '/about'
-                      ? 'font-semibold text-primary text-xl xl:text-lg lg:text-base font-Montserrat cursor-pointer border-b-4 border-blue-light-600'
-                      : 'font-normal text-secondary text-lg xl:text-lg lg:text-base font-Montserrat cursor-pointer'
-                  }`}
+                  //   className={`${
+                  //     activeTab === '/about'
+                  //       ? 'font-semibold text-primary text-xl xl:text-lg lg:text-base font-Montserrat cursor-pointer border-b-4 border-blue-light-600'
+                  //       : 'font-normal text-secondary text-lg xl:text-lg lg:text-base font-Montserrat cursor-pointer'
+                  //   }`}
                 >
                   About
                 </div>
-              </NavLink>
-              <NavLink to={'/contact'}>
+              </Link>
+              <Link href={'/contact'}>
                 <div
                   onClick={() => isActive('/contact')}
-                  className={`${
-                    activeTab === '/contact'
-                      ? 'font-bold text-primary text-xl xl:text-lg lg:text-base   font-Montserrat cursor-pointer border-b-4 border-blue-light-600'
-                      : ' text-secondary xl:text-lg lg:text-base text-lg font-Montserrat cursor-pointer'
-                  }`}
+                  //   className={`${
+                  //     activeTab === '/contact'
+                  //       ? 'font-bold text-primary text-xl xl:text-lg lg:text-base   font-Montserrat cursor-pointer border-b-4 border-blue-light-600'
+                  //       : ' text-secondary xl:text-lg lg:text-base text-lg font-Montserrat cursor-pointer'
+                  //   }`}
                 >
                   Contact
                 </div>
-              </NavLink>
-              <HashLink to='/#blog'>
-                <div
-                  onClick={() => isActive('blog')}
-                  className={`${
-                    activeTab === 'blog'
-                      ? 'font-semibold text-primary text-xl xl:text-lg lg:text-base font-Montserrat cursor-pointer border-b-4 border-blue-light-600'
-                      : 'font-normal text-secondary text-lg xl:text-lg lg:text-base font-Montserrat cursor-pointer'
-                  }`}
-                >
-                  Blog
-                </div>
-              </HashLink>
+              </Link>
+
+              <div
+                onClick={() => isActive('blog')}
+                // className={`${
+                //   activeTab === 'blog'
+                //     ? 'font-semibold text-primary text-xl xl:text-lg lg:text-base font-Montserrat cursor-pointer border-b-4 border-blue-light-600'
+                //     : 'font-normal text-secondary text-lg xl:text-lg lg:text-base font-Montserrat cursor-pointer'
+                // }`}
+              >
+                Blog
+              </div>
             </div>
           </div>
           <div className='lg:flex hidden gap-6 lg:gap-5'>
@@ -123,7 +120,7 @@ const Navbar = () => {
               type='button'
               size='sm'
               variant='secondary'
-              onClick={() => navigate('/login')}
+              onClick={''}
               className=' border border-blue-light-900 lg:w-[10.6rem] px-6 lg:px-7 xl:px-6 py-2 rounded-md hover:bg-[purple] hover:text-white shadow-md font-bold lg:text-[1rem] font-Roboto'
             >
               Sign in
@@ -132,7 +129,7 @@ const Navbar = () => {
               type='button'
               size='sm'
               variant='secondary'
-              onClick={() => navigate('/register')}
+              onClick={''}
               className='px-6 lg:px-10 xl:px-6 lg:w-[10.6rem] rounded-md hover:bg-[purple] hover:text-white bg-[#001F3F] text-[#FFFFFF] font-bold lg:text-[1rem] font-Roboto'
             >
               Get Started
@@ -143,7 +140,7 @@ const Navbar = () => {
           </span>
         </div>
       </nav>
-      {isOpen && <MobileNavbar />}
+      {/* {isOpen && <MobileNavbar />} */}
       {dropDown && (
         <div className=' lg:block hidden fixed z-30 top-0 left-0 h-full w-full bg-black bg-opacity-50   '>
           <div className=' grid justify-center -ml-60 pt-24 mx-auto'>

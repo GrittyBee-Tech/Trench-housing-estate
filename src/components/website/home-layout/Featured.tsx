@@ -1,5 +1,5 @@
 'use client';
-
+import React from 'react';
 import Homes from './featured-layout/Homes';
 import { RootState } from '@/app/store';
 import { featureActions } from '@/app/features/featured-slice';
@@ -78,11 +78,11 @@ const Featured = () => {
             spaceBetween={16}
           >
             {[...properties, ...properties2].map((item) => {
-              const { id, image, content } = item;
+              const { id, content } = item;
 
               return (
                 <SwiperSlide key={id} className='relative'>
-                  <Image className=' w-full' src='' alt='' />
+                  <Image className='w-full' src={'/assets/house.png'} alt='' />
                   <div className=' bg-[#00172E] opacity-90 rounded-br-3xl grid grid-flow-col justify-between items-center p-3 absolute w-full bottom-0'>
                     <p className='xl:text-2xl lg:text-base font-semibold font-Montserrat text-[#FFFFFF] text-nowrap'>
                       {content}

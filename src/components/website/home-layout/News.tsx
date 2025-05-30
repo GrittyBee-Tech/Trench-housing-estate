@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from 'next/image';
 import Button from '@/components/ui/Button';
 
@@ -73,7 +74,7 @@ const News = () => {
           </div>
         </article>
         <article className='flex sm:flex-row flex-col lg:h-52 overflow-hidden xl:h-[11rem] items-center rounded-2xl bg-[#f5f5f5]'>
-          <img
+          <Image
             className='w-full mb-2 sm:w-2/5 lg:w-52 h-full rounded-3xl'
             src='/assets/news3.png'
             alt=''
