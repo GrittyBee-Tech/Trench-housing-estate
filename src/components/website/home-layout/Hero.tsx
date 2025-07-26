@@ -8,16 +8,16 @@ const Hero = () => {
   return (
     <section className='w-full'>
       <Navbar />
-      <div className=' bg-heroBg  bg-no-repeat lg:bg-cover md:bg-cover xl:bg-cover bg-cover w-full lg:pb-48 pb-5 '>
+      <div className='bg-heroBg bg-no-repeat lg:bg-cover md:bg-cover xl:bg-cover bg-cover w-full lg:pb-20 pb-5 '>
         <div className=' grid gap-11 px-7 xl:px-28'>
           <div className='grid gap-3'>
-            <h1 className=' md:pt-60 pt-20 text-[#FFFFFF] font-bold text-2xl font-Montserrat md:text-8xl'>
-              The story of a Home.
+            <h1 className=' md:pt-32 pt-20 text-[#FFFFFF] font-bold text-2xl font-Montserrat md:text-6xl'>
+              Every Home Has a Story.
             </h1>
             <p className=' font-Montserrat lg:max-w-4xl font-normal text-sm md:text-xl text-[#FFFFFF] '>
-              In the heart of every neighborhood lies a story waiting to be
-              written. Whether it’s a bustling commercial space or a cozy
-              suburban house. We’ve got you covered!{' '}
+              Trench Housing is Nigeria’s smart property platform that lets you
+              connect directly with landlords, certified property lawyers, or
+              trusted agents — no inflated fees, no middlemen headaches.
             </p>
           </div>
 
@@ -36,7 +36,7 @@ const Hero = () => {
               size='sm'
               variant='secondary'
               // onClick=''
-              className=' border border-white px-8 py-3 lg:px-8 lg:py-3 rounded-lg hover:border-[purple] hover:bg-[purple] hover:text-white  text-white shadow-md  font-bold lg:text-base font-Montserrat'
+              className=' border  border-white px-8 py-3 lg:px-8 lg:py-3 rounded-lg hover:border-[purple] hover:bg-[purple] hover:text-white  text-white shadow-md  font-bold lg:text-base font-Montserrat'
             >
               Get in touch
             </Button>

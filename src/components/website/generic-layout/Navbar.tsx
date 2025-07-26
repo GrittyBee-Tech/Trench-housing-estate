@@ -96,10 +96,7 @@ const Navbar = () => {
               Get Started
             </Button>
           </div>
-          <span
-            onClick={toggleContent}
-            // className='lg:hidden flex ml-[10rem]'
-          >
+          <span onClick={toggleContent} className='lg:hidden flex ml-[10rem]'>
             <Icon type={ICONS.hamburger_icon} size={24} color='#1D1B20' />
           </span>
         </div>
