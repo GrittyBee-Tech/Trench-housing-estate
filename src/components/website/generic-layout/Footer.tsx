@@ -2,12 +2,18 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import Icon from '../ui/icons';
+import Icon from '../../ui/icons';
 
 const Footer = () => {
   return (
     <footer className='bg-[#001A35] text-white px-8 sm:px-12 py-8 xl:p-24 flex gap-8 lg:flex-row flex-col items-start justify-between'>
-      <Image src='/assets/logo-white.png' alt='' className='w-40 xl:w-auto' />
+      <Image
+        src='/logo-white.png'
+        width='180'
+        height='180'
+        alt=''
+        className=''
+      />
       <ul className='flex flex-col gap-4'>
         <li className='font-medium font-Montserrat lg:text-base text-lg'>
           <Link href='/blog'>Blog</Link>
@@ -43,7 +49,7 @@ const Footer = () => {
         <li className='flex gap-3 items-start'>
           <Icon size={24} color='white' type='mail_icon' />
           <p className='font-Montserrat lg:text-base text-lg'>
-            debra.holt@example.com
+            trenchhousing@yahoo.com
           </p>
         </li>
         <li className='flex gap-3 items-start'>

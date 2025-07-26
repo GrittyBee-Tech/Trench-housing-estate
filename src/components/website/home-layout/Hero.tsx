@@ -1,7 +1,7 @@
 'use client';
 
-import Footer from '@/components/generic-layout/Footer';
-import Navbar from '@/components/generic-layout/Navbar';
+import Footer from '@/components/website/generic-layout/Footer';
+import Navbar from '@/components/website/generic-layout/Navbar';
 import Button from '@/components/ui/Button';
 
 const Hero = () => {

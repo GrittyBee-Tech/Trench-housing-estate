@@ -11,7 +11,7 @@ export default function NotFoundPage() {
         Sorry, the page you are looking for does not exist.
       </p>
       <Link
-        href='/dashboard'
+        href='/'
         className='px-6 py-3 bg-primary text-white rounded-lg  transition duration-300'
       >
         Go Back Home

@@ -21,8 +21,8 @@ const config: Config = {
       Montserrat: ['Montserrat', 'sans-serif'],
     },
     backgroundImage: {
-      heroBg: "url('/assets/hero-background-image.png')",
-      contactpattern: "url('/assets/contact/contact-background.png')",
+      heroBg: "url('/hero-background-image.png')",
+      contactpattern: "url('/contact-background.png')",
     },
     colors: {
       primary: '#001A35',
