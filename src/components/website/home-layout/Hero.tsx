@@ -20,7 +20,6 @@ const Hero = () => {
               trusted agents — no inflated fees, no middlemen headaches.
             </p>
           </div>
-
           <div className='grid grid-flow-col w-max gap-4 '>
             <Button
               type='button'

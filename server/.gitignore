@@ -1,0 +1,9 @@
+# node modules (should never go to GitHub)
+node_modules/
+
+# environment variables (secrets)
+.env
+
+# logs and system files
+*.log
+.DS_Store
