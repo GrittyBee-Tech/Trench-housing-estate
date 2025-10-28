@@ -1,5 +1,12 @@
-import LandingPage from '@/components/website/home-layout';
+import WebsiteLayout from './(website)/layout';
+import PropertyMenu from './(website)/trench/property-menu';
+import TrenchHero from './(website)/trench/trenchHero';
 
 export default function Home() {
-  return <LandingPage />;
+  return (
+    <WebsiteLayout>
+      <TrenchHero />
+      <PropertyMenu />
+    </WebsiteLayout>
+  );
 }
