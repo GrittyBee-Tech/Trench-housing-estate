@@ -31,6 +31,7 @@ export const footerSectionSchema = [
   {
     title: 'For Agents',
     links: [
+      { label: 'Become An Agent', href: '/' },
       { label: 'Privacy Policy', href: '/' },
       { label: 'Terms and Conditions', href: '/' },
       { label: 'FAQS', href: '/faq' },
@@ -38,7 +39,10 @@ export const footerSectionSchema = [
   },
   {
     title: 'For Buyers',
-    links: [{ label: 'Become a OneSeller', href: '/' }],
+    links: [
+      { label: 'Become a Buyer', href: '/' },
+      { label: 'FAQS', href: '/faq' },
+    ],
   },
   {
     title: 'Social Media',
@@ -65,6 +69,20 @@ export const footerSectionSchema = [
       },
     ],
   },
+];
+
+// Faq Schema
+export const BUYER_FAQ_SCHEMA = [
+  { id: 1, question: 'Is my Information secure?' },
+  { id: 2, question: 'How does the property inspection process work?' },
+  { id: 3, question: 'Can I pay installmentally?' },
+  { id: 4, question: 'What types of properties are available?' },
+];
+export const AGENTS_FAQ_SCHEMA = [
+  { id: 1, question: 'Is my Information secure?' },
+  { id: 2, question: 'How does the property inspection process work?' },
+  { id: 3, question: 'Can I pay installmentally?' },
+  { id: 4, question: 'What types of properties are available?' },
 ];
 
 // propertyMenu

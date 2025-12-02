@@ -18,13 +18,13 @@ const TrenchHero = () => {
           <div className='grid grid-flow-col w-max gap-4 '>
             <button
               // onClick={''}
-              className='  lg:px-11 px-4 rounded-lg hover:bg-[purple] hover:text-white bg-[#001F3F] text-[#FFFFFF] font-bold lg:text-base font-Montserrat'
+              className=' border  lg:px-11 px-4 rounded-lg py-3 hover:bg-[purple] hover:text-white border-[#001F3F] bg-[#001F3F] text-[#FFFFFF] font-bold lg:text-base font-Montserrat'
             >
               Learn More
             </button>
             <button
               // onClick=''
-              className=' border  border-white px-8 py-3 lg:px-8 lg:py-3 rounded-lg hover:border-[purple] hover:bg-[purple] hover:text-white  text-white shadow-md  font-bold lg:text-base font-Montserrat'
+              className=' border border-white px-8 py-3 lg:px-8 lg:py-3 rounded-lg hover:border-[purple] hover:bg-[purple] hover:text-white  text-white font-bold lg:text-base font-Montserrat'
             >
               Get in touch
             </button>
